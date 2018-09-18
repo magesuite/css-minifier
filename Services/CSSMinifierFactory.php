@@ -2,15 +2,13 @@
 
 namespace MageSuite\CssMinifier\Services;
 
-use MatthiasMullie\Minify\CSS as CssMinLibrary;
-
 class CSSMinifierFactory
 {
     /**
-     * @return CssMinLibrary
+     * @return \MatthiasMullie\Minify\CSS
      */
     public function create()
     {
-        return new CssMinLibrary();
+        return new \MatthiasMullie\Minify\CSS();
     }
 }
